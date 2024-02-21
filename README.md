@@ -1,4 +1,4 @@
-# youtubedataaggregator
+# YouTube Data Aggregator
 Find statistics about any YouTube channel
 
 ## Introduction
@@ -24,5 +24,7 @@ The data when viewed as a unit should give insight into the relationship between
         - Channel category
         - Tags used in videos
         - Description in Videos
+     
+
   
       

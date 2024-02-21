@@ -25,6 +25,39 @@ The data when viewed as a unit should give insight into the relationship between
         - Tags used in videos
         - Description in Videos
      
+### How would I code this? 
+I will use React for this project, and the component structure should be as follows: 
+``` Pseudo
+App() { 
+state variable that holds the API key
+
+return <>
+    <Search {api key passed as prop} />
+        </>
+}
+
+Search({receive api key as prop}) {
+
+receiveQuery{
+    event handler callback that tracks keystroke, and updates form accordingly.
+    if (input is a url){
+        First handle error to ensure that it is a YouTube link.
+        Then collect the channel Id that appears in the url. 
+        }
+}
+
+return <>
+    <form> </form>
+    <ApiCall {api key passed as prop} />
+}
+
+
+ApiCall({receive api key as prop}){
+async API
+
+}
+
+```
 
   
       

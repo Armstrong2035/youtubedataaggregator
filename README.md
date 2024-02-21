@@ -89,5 +89,18 @@ retrieve and display relevant data
 
 ```
 
+### Calculating and displaying the data: 
+I presume that the bulk of the data will be shown as is, but not all. The ones I believe should be calculated are as follows: 
+
+- Most Popular videos (Top 10 videos will be shown. unlock more in  a premium plan)
+    - Engagement rate per video
+    - Popular keywords and tags. (this would require collecting the keywords from most popular videos and analysing them with a LLM like ChatGPT to provide some context.
+    - Average Video Duration
+    - Time of day analysis
+    - Comparative analysis with channels in the same category
+    - Video performance by category
+
+
+
   
       

@@ -26,7 +26,7 @@ The data when viewed as a unit should give insight into the relationship between
         - Description in Videos
      
 ### How would I code this? 
-I will use React for this project, and the component structure should be as follows: 
+I will use React for this project, and the pseudo code is as follows: 
 ``` Pseudo
 App() { 
 state variable that holds the API key
@@ -38,22 +38,38 @@ return <>
 
 Search({receive api key as prop}) {
 
+[query, setQuery] = useState('')
+
 receiveQuery{
     event handler callback that tracks keystroke, and updates form accordingly.
     if (input is a url){
+    channelId = 
         First handle error to ensure that it is a YouTube link.
-        Then collect the channel Id that appears in the url. 
+        Then collect the channel Id that appears in the url.
+setQuery(channelid)
         }
+    if (input is not a url) {
+setQuery(channelName)
+    
+}
 }
 
 return <>
-    <form> </form>
-    <ApiCall {api key passed as prop} />
+    <form {setQuery when form is filled}> Paste Youtube channel link, or type the username </form>
+    <ApiCall {api key passed as prop}, {query passed as prop} />
 }
 
 
-ApiCall({receive api key as prop}){
-async API
+ApiCall({receive api key as prop, received query as prop}){
+[metaData, setMetaData] = useState[]
+use api key and query to find, and view the youtube channel information.
+Then pasrse it into Json and setMetaData
+
+return <>
+    <ChannelPopularity {send meta data as prop} />
+    <ChannelEngagement {send meta data as prop} />
+    <ChannelActivity {send meta data as prop} />
+        </>
 
 }
 

@@ -70,8 +70,22 @@ return <>
     <ChannelEngagement {send meta data as prop} />
     <ChannelActivity {send meta data as prop} />
         </>
-
 }
+
+ChannelPopularity(metaData) {
+retrieve and display relevant data
+}
+
+ChannelEngagement(metaData) {
+retrieve and display relevant data
+}
+
+ChannelActivity(metaData) {
+retrieve and display relevant data
+}
+
+
+
 
 ```
 
